@@ -1,0 +1,12 @@
+{
+  "HomeserverURL": "your_homeserver_url",
+  "UserID": "your_user_id",
+  "AccessToken": "your_access_token",
+  "AccessTokenCmd": "your_access_token_cmd",
+  "Rooms": {
+      "rooma": "room_id_a",
+      "roomb": "room_id_b",
+      "roomc": "room_id_c",
+      "roomd": "room_id_d"
+  }
+}
