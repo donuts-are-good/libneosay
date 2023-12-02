@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
-	"time"
 
 	"github.com/matrix-org/gomatrix"
 )
@@ -22,7 +21,6 @@ type Neosay struct {
 }
 
 const maxMessageSize = 4000
-const messageDelay = 2 * time.Second
 
 func NewNeosay(configFile string) (*Neosay, error) {
 	// load the config into json
@@ -62,6 +60,5 @@ func (n *Neosay) SendMessage(roomName, message string) error {
 		return err
 	}
 
-	time.Sleep(messageDelay)
 	return nil
 }
